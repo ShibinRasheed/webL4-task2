@@ -1,0 +1,120 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: 'Roboto',sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em;
+    max-height: 70px;
+}
+
+
+
+nav ul,li{
+    display: flex;
+    margin: 0.5em;
+}
+
+
+.navlogo{
+    width: 40px;
+    height: 40px;
+}
+
+img {
+    border-radius: 10%;
+  }
+
+#name{
+    font-family: 'roboto';
+    font-weight: 700;
+}
+
+#firstname{
+    color: #bcfd5b;
+}
+
+#container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#photo{
+    max-width: 400px;
+    flex-shrink: 2;
+}
+
+#mypic{
+    width:100%;
+}
+
+#content{
+    max-width: 40%;
+    flex-shrink: 1;
+}
+
+#content h1{
+    color: #bcfd5b;
+    font-family: 'Roboto';
+    font-weight: 700;
+    text-align: center;
+}
+
+#content h2{
+    margin-top: -0.75em;
+    text-align: center;
+}
+
+#content button{
+    margin: 5px;
+}
+
+@media (max-width: 560px) {
+    nav ul{
+        display: none;
+    }
+    #content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 80%;
+        margin: 10%;
+    }
+    nav{
+        justify-content: center;
+    }
+
+    #container{
+        flex-direction: column;
+        align-content: center;
+    }
+    #photo{
+        max-width: 300px;
+        align-self: center;
+    }
+    button{
+        width: 200px;
+    }
+
+}
+
+.contact{
+    background-color: #bcfd5b;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1em;
+}
+
+.soon{
+    border: #bcfd5b 1px solid;
+    border-radius: 1em;
+    padding: 10px 20px;
+    color:white;
+    background-color: black;
+}
